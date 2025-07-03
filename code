@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SH Portfolio | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"href="faltuproject02.css"> 
+</head>
+<body>
+  <nav>
+    <div class="logo">SHIVANSH</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Hi, I'm SHIVANSH</h1>
+    <p>Web Developer | Front-End Enthusiast | Lifelong Learner</p>
+    <button class="cta-btn">Download Resume</button>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <img src="images/profile.jpg" alt="Profile Photo">
+    <p>I am a passionate web developer focused on crafting clean and user-friendly experiences. Currently learning advanced JavaScript and exploring backend technologies.</p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Git</div>
+      <div class="skill">Responsive Design</div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>Personal responsive portfolio built using HTML, CSS, and Flexbox/Grid.</p>
+      <a href="#">Live Demo</a>
+      <a href="#">GitHub Repo</a>
+    </div>
+    <div class="project-card">
+      <h3>ToDo App</h3>
+      <p>Simple JavaScript ToDo list app with localStorage support.</p>
+      <a href="#">Live Demo</a>
+      <a href="#">GitHub Repo</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="social-icons">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="mailto:someone@example.com">Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 KS Portfolio</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('nav').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
